@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <CnsQueryAllVolume xmlns="urn:vsan">
+            <_this type="CnsVolumeManager">cns-volume-manager</_this>
+            <filter>
+                <containerClusterIds>{0}</containerClusterIds>
+            </filter>
+            <selection>
+                <names>VOLUME_TYPE</names>
+            </selection>
+        </CnsQueryAllVolume>
+    </Body>
+</Envelope>

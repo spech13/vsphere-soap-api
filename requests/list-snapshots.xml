@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <RetrieveSnapshotInfo xmlns='urn:vim25'>
+            <_this type="VcenterVStorageObjectManager">VStorageObjectManager</_this>
+            <id>
+                <id>{0}</id>
+            </id>
+            <datastore>{1}</datastore>
+        </RetrieveSnapshotInfo>
+    </Body>
+</Envelope>

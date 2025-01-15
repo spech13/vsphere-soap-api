@@ -1,0 +1,42 @@
+<returnval xmlns:vim25=\"urn:vim25\">
+    <vim25:obj type=\"Task\">task-534227</vim25:obj>
+    <vim25:propSet>
+        <vim25:name>info</vim25:name>
+        <vim25:val xsi:type=\"vim25:TaskInfo\">
+            <vim25:key>task-534227</vim25:key>
+            <vim25:task type=\"Task\">task-534227</vim25:task>
+            <vim25:descriptionId>com.vmware.cns.tasks.attachvolume</vim25:descriptionId>
+            <vim25:entity type=\"VirtualMachine\">vm-57576</vim25:entity>
+            <vim25:entityName>attentive-akita-dev-w-4</vim25:entityName>
+            <vim25:state>success</vim25:state>
+            <vim25:cancelled>false</vim25:cancelled>
+            <vim25:cancelable>false</vim25:cancelable>
+            <vim25:result xsi:type=\"CnsVolumeOperationBatchResult\">
+                <volumeResults xsi:type=\"CnsVolumeAttachResult\">
+                    <fault>
+                        <fault xsi:type=\"CnsFault\">
+                            <faultCause>
+                                <fault xsi:type=\"vim25:InvalidController\" xmlns:vim25=\"urn:vim25\">
+                                    <vim25:property>virtualDeviceSpec.device.controllerKey</vim25:property>
+                                    <vim25:deviceIndex>0</vim25:deviceIndex>
+                                    <vim25:controllerKey>1000</vim25:controllerKey>
+                                </fault>
+                                <localizedMessage>The device &apos;0&apos; is referring to a nonexisting controller &apos;1,000&apos;.</localizedMessage>
+                            </faultCause>
+                            <reason>VSLM task failed</reason>
+                        </fault>
+                        <localizedMessage>CnsFault error: VSLM task failed</localizedMessage>
+                    </fault>
+                </volumeResults>
+            </vim25:result>
+            <vim25:reason xsi:type=\"vim25:TaskReasonUser\">
+                <vim25:userName>com.vmware.cns</vim25:userName>
+            </vim25:reason>
+            <vim25:queueTime>2024-04-18T07:45:03.794203Z</vim25:queueTime>
+            <vim25:startTime>2024-04-18T07:45:03.810725Z</vim25:startTime>
+            <vim25:completeTime>2024-04-18T07:45:04.376095Z</vim25:completeTime>
+            <vim25:eventChainId>19385007</vim25:eventChainId>
+            <vim25:activationId>3a1b46d3</vim25:activationId>
+        </vim25:val>
+    </vim25:propSet>
+</returnval>

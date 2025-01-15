@@ -1,0 +1,8 @@
+<?xml version= "1.0" encoding= "UTF-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+    <CreatePropertyCollector xmlns="urn:vsan">
+    	<_this type="PropertyCollector">propertyCollector</_this>
+    </CreatePropertyCollector>
+    </Body>
+</Envelope>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <Logout xmlns="urn:vim25">
+            <_this type="SessionManager">SessionManager</_this>
+        </Logout>
+    </Body>
+</Envelope>

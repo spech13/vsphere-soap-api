@@ -1,0 +1,10 @@
+<?xml version= "1.0" encoding= "UTF-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <FindByDnsName xmlns="urn:vsan">
+            <_this type="SearchIndex">SearchIndex</_this>
+            <dnsName>{0}</dnsName>
+            <vmSearch>true</vmSearch>
+        </FindByDnsName>
+    </Body>
+</Envelope>

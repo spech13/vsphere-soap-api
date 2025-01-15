@@ -1,0 +1,15 @@
+<?xml version= "1.0" encoding= "UTF-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+    <RetrieveProperties xmlns="urn:vim25">
+    	<_this type="PropertyCollector">propertyCollector</_this>
+	<specSet>
+		<propSet>
+			<type>VirtualMachine</type>
+			<all>true</all>
+		</propSet>
+		<objectSet><obj type="VirtualMachine">{0}</obj></objectSet>
+	</specSet>
+    </RetrieveProperties>
+    </Body>
+</Envelope>

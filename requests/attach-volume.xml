@@ -1,0 +1,14 @@
+<?xml version= "1.0" encoding= "UTF-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <CnsAttachVolume xmlns="urn:vsan">
+            <_this type="CnsVolumeManager">cns-volume-manager</_this>
+            <attachSpecs>
+                <volumeId>
+                    <id>{0}</id>
+                </volumeId>
+                <vm>{1}</vm>
+            </attachSpecs>
+        </CnsAttachVolume>
+    </Body>
+</Envelope>

@@ -1,0 +1,30 @@
+<?xml version= "1.0" encoding= "UTF-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <CnsCreateVolume xmlns="urn:vsan">
+            <_this type="CnsVolumeManager">cns-volume-manager</_this>
+            <createSpecs>
+                <name>{0}</name>
+                <volumeType>BLOCK</volumeType>
+                <datastores type="Datastore">{1}</datastores>
+                <metadata>
+                    <containerCluster>
+                        <clusterType>KUBERNETES</clusterType>
+                        <clusterId>{2}</clusterId>
+                        <vSphereUser>{3}</vSphereUser>
+                        <clusterFlavor>VANILLA</clusterFlavor>
+                    </containerCluster>
+                    <containerClusterArray>
+                        <clusterType>KUBERNETES</clusterType>
+                        <clusterId>{4}</clusterId>
+                        <vSphereUser>{5}</vSphereUser>
+                        <clusterFlavor>VANILLA</clusterFlavor>
+                    </containerClusterArray>
+                </metadata>
+                <backingObjectDetails xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="CnsBlockBackingDetails">
+                    <capacityInMb>{6}</capacityInMb>
+                </backingObjectDetails>
+            </createSpecs>
+        </CnsCreateVolume>
+    </Body>
+</Envelope>

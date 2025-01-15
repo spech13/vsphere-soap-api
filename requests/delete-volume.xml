@@ -1,0 +1,12 @@
+<?xml version= "1.0" encoding= "UTF-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <CnsDeleteVolume xmlns='urn:vsan'>
+            <_this type="CnsVolumeManager">cns-volume-manager</_this>
+            <volumeIds>
+                <id>{0}</id>
+            </volumeIds>
+            <deleteDisk>true</deleteDisk>
+        </CnsDeleteVolume>
+    </Body>
+</Envelope>

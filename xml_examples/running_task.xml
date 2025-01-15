@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" 
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <RetrievePropertiesResponse xmlns="urn:vsan">
+            <returnval xmlns:vim25="urn:vim25">
+                <vim25:obj type="Task">task-514662</vim25:obj>
+                <vim25:propSet>
+                    <vim25:name>info</vim25:name>
+                    <vim25:val xsi:type="vim25:TaskInfo">
+                        <vim25:key>task-514662</vim25:key>
+                        <vim25:task type="Task">task-514662</vim25:task>
+                        <vim25:descriptionId>com.vmware.cns.tasks.attachvolume</vim25:descriptionId>
+                        <vim25:entity type="VirtualMachine">vm-54669</vim25:entity>
+                        <vim25:entityName>elated-doberman-dev-w-1</vim25:entityName>
+                        <vim25:state>running</vim25:state>
+                        <vim25:cancelled>false</vim25:cancelled>
+                        <vim25:cancelable>false</vim25:cancelable>
+                        <vim25:progress>0</vim25:progress>
+                        <vim25:reason xsi:type="vim25:TaskReasonUser">
+                            <vim25:userName>com.vmware.cns</vim25:userName>
+                        </vim25:reason>
+                        <vim25:queueTime>2024-03-11T10:17:20.067166Z</vim25:queueTime>
+                        <vim25:startTime>2024-03-11T10:17:20.075594Z</vim25:startTime>
+                        <vim25:eventChainId>19207274</vim25:eventChainId>
+                        <vim25:activationId>39d5fd42</vim25:activationId>
+                    </vim25:val>
+                </vim25:propSet>
+            </returnval>
+        </RetrievePropertiesResponse>
+    </soapenv:Body>
+</soapenv:Envelope>
